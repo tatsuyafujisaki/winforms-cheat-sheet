@@ -2,14 +2,14 @@
 
 namespace WinFormsUtil
 {
-    public partial class Form1 : Form
+    partial class Form1 : Form
     {
-        public Form1()
+        internal Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             Close();
         }
