@@ -16,7 +16,7 @@ namespace WinFormsUtil
         {
             var ofd = new OpenFileDialog
             {
-                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
                 RestoreDirectory = true
             };
 
@@ -29,7 +29,7 @@ namespace WinFormsUtil
             var sfd = new SaveFileDialog
             {
                 Filter = @"All files (*.*)|*.*",
-                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
                 RestoreDirectory = true
             };
 
@@ -42,6 +42,11 @@ namespace WinFormsUtil
             var fbd = new FolderBrowserDialog { SelectedPath = defaultFolder };
 
             return fbd.ShowDialog() == DialogResult.OK ? fbd.SelectedPath : null;
+        }
+
+        static Screen GetMouseScreen()
+        {
+            return Screen.FromPoint(Control.MousePosition);
         }
     }
 }
