@@ -35,5 +35,13 @@ namespace WinFormsUtil
 
             return sfd.ShowDialog() == DialogResult.OK ? sfd.FileName : null;
         }
+
+        internal static string FolderBrowserDialog(string defaultFolder)
+        {
+            // No exception is thrown even if the defaultFolder is null or absent.
+            var fbd = new FolderBrowserDialog { SelectedPath = defaultFolder };
+
+            return fbd.ShowDialog() == DialogResult.OK ? fbd.SelectedPath : null;
+        }
     }
 }
