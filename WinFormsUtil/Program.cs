@@ -10,9 +10,6 @@ namespace WinFormsUtil
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            var fbd = U.FolderBrowserDialog(null);
-
             Application.Run(new Form1());
         }
     }
