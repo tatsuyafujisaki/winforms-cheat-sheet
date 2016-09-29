@@ -3,7 +3,10 @@
 ###### Form
 * AutoSize = True
 * AutoSizeMode = GrowAndShrink
-
+* StartPosition = CenterScreen
+  * Form.CenterToScreen() is not intended to be used directly from your code.
+  * https://msdn.microsoft.com/en-us/library/system.windows.forms.form.centertoscreen.aspx
+  
 ###### ComboBox
 * Sorted = True
 
