@@ -6,7 +6,8 @@
 * StartPosition = CenterScreen
   * Form.CenterToScreen() is not intended to be used directly from your code.
   * https://msdn.microsoft.com/en-us/library/system.windows.forms.form.centertoscreen.aspx
-  
+* TopMost = True
+
 ###### ComboBox
 * Sorted = True
 
