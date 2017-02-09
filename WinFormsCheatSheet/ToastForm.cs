@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace WinFormsUtil
+namespace WinFormsCheatSheet
 {
     public partial class ToastForm : Form
     {

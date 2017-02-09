@@ -1,6 +1,6 @@
-﻿namespace WinFormsUtil
+﻿namespace WinFormsCheatSheet
 {
-    partial class ToastForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.label1.Location = new System.Drawing.Point(12, -1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "...";
-            // 
-            // ToastForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(382, 53);
-            this.Controls.Add(this.label1);
-            this.Name = "ToastForm";
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ToastForm";
+            this.Text = "Form1";
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form1_PreviewKeyDown);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
     }
 }
+
