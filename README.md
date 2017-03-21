@@ -11,6 +11,9 @@
 ###### ComboBox
 * Sorted = True
 
+###### DataGridView
+* MultiSelect = False
+
 ###### ListView
 ```csharp
 lvTrades.BeginUpdate();
