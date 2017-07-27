@@ -5,11 +5,10 @@ namespace WinFormsCheatSheet
 {
     static class U
     {
+        static string GetTextFromClipboard() => Clipboard.GetText().Trim();
+
         // Explanatory wrapper
-        static void SetTextToClipboard(string s)
-        {
-            Clipboard.SetText(s);
-        }
+        static void SetTextToClipboard(string s) => Clipboard.SetText(s);
 
         // Mark Main method with STAThread or ThreadStateException will be thrown.
         static string OpenFileDialog()
