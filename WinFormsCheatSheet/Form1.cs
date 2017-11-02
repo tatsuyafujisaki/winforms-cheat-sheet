@@ -14,8 +14,8 @@ namespace WinFormsCheatSheet
                 && ApplicationDeployment.CurrentDeployment.Update())
             {
                 Application.Restart();
-                // Exit after constructor.
-                // Note that there is no way to exit in the constructor.
+
+                // Exit after constructor there is no way to exit in the constructor.
                 Load += (sender, e) => Close();
             }
         }
