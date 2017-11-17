@@ -1,6 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/ku6lve8st7yxy6ow?svg=true)](https://ci.appveyor.com/project/tatsuya/winforms-cheat-sheet)
 
-###### Form
+# Best practices
+## Form
 * AutoSize = True
 * AutoSizeMode = GrowAndShrink
 * StartPosition = CenterScreen
@@ -8,13 +9,13 @@
   * https://msdn.microsoft.com/en-us/library/system.windows.forms.form.centertoscreen.aspx
 * TopMost = True
 
-###### ComboBox
+## ComboBox
 * Sorted = True
 
-###### DataGridView
+## DataGridView
 * MultiSelect = False
 
-###### ListView
+## ListView
 ```csharp
 lvTrades.BeginUpdate();
 
