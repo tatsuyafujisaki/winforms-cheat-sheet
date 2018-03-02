@@ -49,7 +49,5 @@ namespace WinFormsCheatSheet
 
             return fbd.ShowDialog() == DialogResult.OK ? fbd.SelectedPath : null;
         }
-
-
     }
 }
